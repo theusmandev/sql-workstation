@@ -13,6 +13,7 @@ values
 
 select * from tblemployee1
 
+
 WITH CTE AS (
     SELECT 
         Name,
@@ -20,7 +21,7 @@ WITH CTE AS (
         ROW_NUMBER() OVER (PARTITION BY Name, Gender ORDER BY (SELECT 0)) AS rownumber
     FROM tblemployee1
 )
+
 SELECT *
 FROM CTE
 WHERE rownumber > 1;
-
