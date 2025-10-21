@@ -1,3 +1,5 @@
+--trick 53
+
 declare @var varchar(10) = '4'
 select right(('0000'+@var),4) as same_len_str
 

@@ -1,3 +1,7 @@
+--trick 54
+
+
+
 declare @var varchar(40) ='fsd,,d,d,,,,,,df,,,fa,gt,ff,ef,,,'
 
 select replace(replace(replace(@var,',','*,'),',*',''),'*,',',') as replace_char
