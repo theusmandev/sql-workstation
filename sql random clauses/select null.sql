@@ -25,3 +25,4 @@ select * from Employees1
 SELECT TOP 3 emp_name, salary
 FROM Employees1 
 ORDER BY (SELECT NULL);
+
