@@ -63,3 +63,17 @@ SELECT
     'Dept ' + CAST(n AS NVARCHAR(10))
 FROM Numbers
 WHERE n BETWEEN 1 AND 1000000;
+
+
+
+
+
+
+
+BULK INSERT Employees
+FROM "E:\git-workstation\sql-workstation\sql optimization\sample data.csv"
+WITH (
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '\n',
+    TABLOCK
+);
